@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 
@@ -9,8 +10,19 @@ import { Links } from "./components/Links";
 import { ScrollToTop } from "./components/ScrollToTop";
 import { Achievements } from "./pages/Achievements";
 import { Projects } from "./pages/Projects";
+import { Preloader } from "./pages/Preloader";
 
 function App() {
+	const [loading, setLoading] = useState(true);
+
+	useEffect(() => {
+		asyncFun().then(() => setLoading(false));
+	}, []);
+
+	if (loading) {
+		return <Preloader />;
+	}
+
 	return (
 		<>
 			<Links />
@@ -22,6 +34,14 @@ function App() {
 			<Projects />
 		</>
 	);
+}
+
+function asyncFun() {
+	return new Promise((resolve) => {
+		setTimeout(() => {
+			resolve(true);
+		}, 2000);
+	});
 }
 
 export default App;
