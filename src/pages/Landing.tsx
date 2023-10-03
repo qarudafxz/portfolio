@@ -48,18 +48,13 @@ export const Landing: FC = () => {
 							initial={{ y: -1000, opacity: 0 }}
 							animate={{ y: 0, opacity: 1 }}
 							className='flex justify-between w-full'>
-							{/* <motion.img
-								whileHover={{
-									transition: { duration: 2.01, repeat: Infinity, ease: "linear" },
-									rotate: [null, 360 * direction],
-								}}
-								src={logo}
-								alt='Francis Logo'
-								className='h-8 cursor-pointer'
-							/> */}
 							<h1 className='flex items-center font-bold font-span'>
 								FR
-								<img
+								<motion.img
+									whileHover={{
+										transition: { duration: 2.01, repeat: Infinity, ease: "linear" },
+										rotate: [null, 360 * direction],
+									}}
 									src={logo}
 									className='w-4 h-4'
 								/>
