@@ -1,0 +1,26 @@
+[
+ {
+  "label": "Home",
+  "link": "home"
+ },
+ {
+  "label": "About",
+  "link": "about"
+ },
+ {
+  "label": "Achievements",
+  "link": "achievements"
+ },
+ {
+  "label": "Projects",
+  "link": "projects"
+ },
+ {
+  "label": "Testimonials",
+  "link": "testimonials"
+ },
+ {
+  "label": "Contact",
+  "link": "contact"
+ }
+]

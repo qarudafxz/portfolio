@@ -1,0 +1,43 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+	theme: {
+		extend: {
+			screens: {
+				xxxs: "280px",
+				xxs: "320px",
+				xs: "375px",
+				sm: "425px",
+				md: "768px",
+				lg: "1024px",
+				xl: "1280px",
+				"2xl": "1440px",
+				"3xl": "1920px",
+			},
+			color: {
+				main: "#f4f3ef",
+				semi: "#cb594c",
+			},
+			borderColor: {
+				main: "#f4f3ef",
+				semi: "#cb594c",
+			},
+			textColor: {
+				main: "#f4f3ef",
+				semi: "#cb594c",
+			},
+			backgroundColor: {
+				main: "#f4f3ef",
+				secondary: "#cb594c",
+			},
+			fontFamily: {
+				span: ["Fugaz One", "sans-serif"],
+				title: ["Kanit", "sans-serif"],
+				head: ["Archivo Black", "sans-serif"],
+				sub: ["Gabarito", "sans-serif"],
+				text: ["Poppins", "sans-serif"],
+			},
+		},
+	},
+	plugins: [],
+};
