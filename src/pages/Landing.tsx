@@ -15,7 +15,7 @@ import image from "../assets/image.png";
 // import { SkillsMarquee } from "../components/SkillsMarquee";
 
 export const Landing: FC = () => {
-	const numberOfProjects = useCounter(42, 70);
+	const numberOfProjects = useCounter(21, 70);
 	const monthsOfExperience = useCounter(7, 400);
 	const glitch = useGlitch();
 	const controls = useAnimation();

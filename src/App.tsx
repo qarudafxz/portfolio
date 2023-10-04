@@ -11,6 +11,7 @@ import { ScrollToTop } from "./components/ScrollToTop";
 import { Achievements } from "./pages/Achievements";
 import { Projects } from "./pages/Projects";
 import { Preloader } from "./pages/Preloader";
+import { Testimony } from "./pages/Testimony";
 
 //smooth scrolling component
 import SmoothScroll from "./components/SmoothScroll";
@@ -36,6 +37,7 @@ function App() {
 				<About />
 				<Achievements />
 				<Projects />
+				<Testimony />
 			</SmoothScroll>
 		</>
 	);

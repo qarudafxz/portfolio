@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import { useEffect, useRef } from "react";
 import useWindowSize from "../../hooks/useWindowSize";
+import { useMediaQuery } from "usehooks-ts";
 
 const SmoothScroll = ({ children }: { children: ReactNode }) => {
 	const windowSize = useWindowSize();
@@ -22,7 +23,7 @@ const SmoothScroll = ({ children }: { children: ReactNode }) => {
 		if (scrollingContainerRef.current) {
 			document.body.style.height = `${
 				//adjust later the height
-				scrollingContainerRef.current.getBoundingClientRect().height + 1200
+				scrollingContainerRef.current.getBoundingClientRect().height + 3300
 			}px`;
 		}
 	};

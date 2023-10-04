@@ -30,10 +30,6 @@ export const Achievements: FC = () => {
 			title: "College-wide T-shirt Design Contest 1st runner up",
 			desc: "Was the representative in our college",
 		},
-		{
-			title: "Consistent Dean's Lister",
-			desc: "Grinding on academics every minute every second every hour",
-		},
 	];
 
 	useEffect(() => {
