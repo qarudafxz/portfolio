@@ -155,7 +155,7 @@ export const Landing: FC = () => {
 								animate={{ x: 0 }}
 								transition={{ duration: 1.5 }}
 								className='text-zinc-700'>
-								A 3rd year Information Technology driven by passion student who loves
+								A 3rd year Information Technology student driven by passion who loves
 								creating innovative solution to eradicate pressing challenges.
 							</motion.p>
 						</div>
