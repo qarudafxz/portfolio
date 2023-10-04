@@ -40,7 +40,7 @@ function asyncFun() {
 	return new Promise((resolve) => {
 		setTimeout(() => {
 			resolve(true);
-		}, 2900);
+		}, 3200);
 	});
 }
 

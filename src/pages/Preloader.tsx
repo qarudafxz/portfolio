@@ -22,7 +22,11 @@ export const Preloader: FC = () => {
 	}, [direction, controls]);
 
 	return (
-		<div className='bg-[#cb594c] w-full h-screen grid place-content-center'>
+		<motion.div
+			initial={{ y: 0 }}
+			animate={{ y: -1000 }}
+			transition={{ duration: 0.45, delay: 3 }}
+			className='bg-[#cb594c] w-full h-screen grid place-content-center'>
 			<motion.img
 				animate={{
 					transition: { duration: 2.01, repeat: Infinity, ease: "linear" },
@@ -55,6 +59,6 @@ export const Preloader: FC = () => {
 					ACTION
 				</motion.h1>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
