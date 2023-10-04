@@ -49,9 +49,7 @@ export const Achievements: FC = () => {
 	}, [dots]);
 
 	return (
-		<div
-			id='achievements'
-			className='bg-main w-full xxxs:h-[2140px] md:h-[900px] lg:h-screen'>
+		<div className='bg-main w-full xxxs:h-[2140px] md:h-[550px]'>
 			<div className='container'>
 				<h1 className='text-center font-sub text-5xl'>
 					What I've achieved so far

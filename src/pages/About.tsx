@@ -57,12 +57,12 @@ export const About: FC = () => {
 								delay={450}>
 								<div className='grid grid-cols-2 gap-2 justify-between'>
 									{[
-										"Front-end Frameworks",
+										"Front-end Development",
 										"Back-end Development",
 										"Working with APIs",
-										"Integrations",
+										"Technology Integrations",
 										"Proficient Database",
-										"Elegant UI/UX Design",
+										"Elegant UI/UX Designing",
 									].map((item, idx) => {
 										return (
 											<div

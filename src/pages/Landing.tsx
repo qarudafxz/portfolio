@@ -47,6 +47,7 @@ export const Landing: FC = () => {
 						<motion.div
 							initial={{ y: -1000, opacity: 0 }}
 							animate={{ y: 0, opacity: 1 }}
+							transition={{ duration: 0.9999 }}
 							className='flex justify-between w-full'>
 							<h1 className='flex items-center font-bold font-span'>
 								FR
@@ -61,7 +62,7 @@ export const Landing: FC = () => {
 								NCIS
 							</h1>
 							<div className='xxxs:hidden md:flex justify-end items-center w-full'>
-								<div className='flex gap-10 font-title'>
+								<div className='flex flex-col font-title'>
 									{menu.map((item, idx) => {
 										return (
 											<Link
@@ -133,14 +134,14 @@ export const Landing: FC = () => {
 								transition={{
 									duration: 1,
 								}}
-								className='xxxs:px-0 lg:px-44'>
+								className='xxxs:px-0 lg:px-36'>
 								<h1 className='font-title bg-gradient-to-tr from-black to-zinc-100 bg-clip-text tracking-tighter font-bold text-center xxxs:text-5xl md:text-6xl xl:text-[120px]'>
-									TECH-SAVVY GEEK OUT OF THIS WORLD
+									GEEK POWERED CREATIVITY IN
 									<span
 										ref={glitch.ref}
 										className='text-[#cb594c] font-span ml-4'>
 										{" "}
-										MIND
+										ACTION
 									</span>
 								</h1>
 							</motion.div>

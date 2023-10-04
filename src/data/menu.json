@@ -1,26 +1,20 @@
 [
  {
-  "label": "Home",
+  "label": "HOME",
   "link": "home"
  },
  {
-  "label": "About",
+  "label": "ABOUT",
   "link": "about"
  },
+
  {
-  "label": "Achievements",
-  "link": "achievements"
- },
- {
-  "label": "Projects",
+  "label": "PROJECTS",
   "link": "projects"
  },
+
  {
-  "label": "Testimonials",
-  "link": "testimonials"
- },
- {
-  "label": "Contact",
+  "label": "CONTACT",
   "link": "contact"
  }
 ]

@@ -30,8 +30,31 @@ export const Preloader: FC = () => {
 				}}
 				src={logo}
 				alt='Francis Tin-ao'
-				className='w-14 h-14'
+				className='w-14 h-14 m-auto'
 			/>
+			<div className='flex xxxs:flex-col xxxs:gap-0 md:flex-row md:gap-2 items-center'>
+				<motion.h1
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{ delay: 0.3, duration: 1 }}
+					className='font-span text-4xl mt-4'>
+					CREATIVITY
+				</motion.h1>
+				<motion.h1
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{ delay: 1, duration: 1 }}
+					className='font-span text-4xl mt-4'>
+					IN
+				</motion.h1>
+				<motion.h1
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{ delay: 2, duration: 1 }}
+					className='font-span text-4xl mt-4 text-white'>
+					ACTION
+				</motion.h1>
+			</div>
 		</div>
 	);
 };
