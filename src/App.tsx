@@ -12,6 +12,9 @@ import { Achievements } from "./pages/Achievements";
 import { Projects } from "./pages/Projects";
 import { Preloader } from "./pages/Preloader";
 
+//smooth scrolling component
+import SmoothScroll from "./components/SmoothScroll";
+
 function App() {
 	const [loading, setLoading] = useState(true);
 
@@ -27,11 +30,13 @@ function App() {
 		<>
 			<Links />
 			<ScrollToTop />
-			<Landing />
-			<SkillsMarquee />
-			<About />
-			<Achievements />
-			<Projects />
+			<SmoothScroll>
+				<Landing />
+				<SkillsMarquee />
+				<About />
+				<Achievements />
+				<Projects />
+			</SmoothScroll>
 		</>
 	);
 }

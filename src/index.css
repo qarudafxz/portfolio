@@ -17,6 +17,15 @@ body::-webkit-scrollbar-thumb {
 	background-color: #000;
 }
 
+.parent {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+}
+
 .bm-burger-button {
 	position: fixed;
 	width: 36px;
