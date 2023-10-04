@@ -47,7 +47,7 @@ export const Landing: FC = () => {
 						<motion.div
 							initial={{ y: -1000, opacity: 0 }}
 							animate={{ y: 0, opacity: 1 }}
-							transition={{ duration: 0.9999 }}
+							transition={{ duration: 0.99999 }}
 							className='flex justify-between w-full'>
 							<h1 className='flex items-center font-bold font-span'>
 								FR

@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Marquee from "react-fast-marquee";
-import { skills } from "../data/Skills.tsx";
 import { motion } from "framer-motion";
+import { skills } from "../data/skills";
 
 export const SkillsMarquee: FC = () => {
 	return (
@@ -9,7 +9,7 @@ export const SkillsMarquee: FC = () => {
 			speed={95}
 			gradientWidth={25}
 			className='bg-black p-14'>
-			{skills.map((skill, idx) => {
+			{skills.map((skill, idx: number) => {
 				return (
 					<motion.div
 						whileHover={{ scale: 1.2 }}

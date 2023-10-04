@@ -7,8 +7,7 @@ type Achievements = {
 };
 
 export const Achievements: FC = () => {
-	// eslint-disable-next-line @typescript-eslint/no-unused-vars
-	const [dots, setDots] = useState<string[]>([".", ".", ".", ".", "."]);
+	const dots = [".", ".", ".", ".", "."];
 	const [index, setIndex] = useState<number>(0);
 	const [activeIndex, setActiveIndex] = useState<number>(0);
 
