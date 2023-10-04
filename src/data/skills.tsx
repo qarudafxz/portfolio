@@ -5,6 +5,8 @@ import {
 	SiVite,
 	SiTailwindcss,
 	SiSocketdotio,
+	SiAdobephotoshop,
+	SiFigma,
 } from "react-icons/si";
 import { FaReact, FaLaravel } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
@@ -35,5 +37,13 @@ export const skills = [
 	{
 		label: "Socket IO",
 		icon: <SiSocketdotio className='text-2xl text-[#cb594c]' />,
+	},
+	{
+		label: "Figma",
+		icon: <SiFigma className='text-2xl text-[#cb594c]' />,
+	},
+	{
+		label: "Photoshop",
+		icon: <SiAdobephotoshop className='text-2xl text-[#cb594c]' />,
 	},
 ];

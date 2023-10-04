@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export const SkillsMarquee: FC = () => {
 	return (
 		<Marquee
-			speed={60}
+			speed={95}
 			gradientWidth={25}
 			className='bg-black p-14'>
 			{skills.map((skill, idx) => {

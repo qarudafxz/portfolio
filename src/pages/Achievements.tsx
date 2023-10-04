@@ -69,7 +69,7 @@ export const Achievements: FC = () => {
 						return (
 							<div
 								key={idx}
-								className='col md:col-lg-10 lg:col-span-1'>
+								className='col-md md:col-lg-10 lg:col-span-1'>
 								<AchievementCard
 									key={idx}
 									idx={idx}

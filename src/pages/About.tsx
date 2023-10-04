@@ -8,7 +8,7 @@ export const About: FC = () => {
 	return (
 		<div
 			id='about'
-			className='w-full p-4 bg-main xxxs:h-[900px] lg:h-screen'>
+			className='w-full p-4 bg-main xxxs:h-[1100px] lg:h-screen'>
 			<div className='container'>
 				<div className='row items-center'>
 					<div className='xxxs:col col-span-1 md:col col-md-6'>
@@ -35,6 +35,18 @@ export const About: FC = () => {
 							<h1 className='font-title font-bold text-6xl my-3'>
 								<span className='text-semi'>Francis</span> Tin-ao
 							</h1>
+						</ScrollAnimation>
+						<ScrollAnimation
+							animateIn='fadeIn'
+							delay={180}>
+							<iframe
+								className='rounded-md my-4'
+								src='https://open.spotify.com/embed/track/56v8WEnGzLByGsDAXDiv4d?utm_source=generator&theme=0'
+								width='100%'
+								height='152'
+								allow='autoplay	*; encrypted-media *; fullscreen *; picture-in-picture *;'
+								loading='lazy'
+							/>
 						</ScrollAnimation>
 						<ScrollAnimation
 							animateIn='fadeIn'
