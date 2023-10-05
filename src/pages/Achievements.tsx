@@ -7,7 +7,7 @@ type Achievements = {
 };
 
 export const Achievements: FC = () => {
-	const dots = [".", ".", ".", ".", "."];
+	const dots = [".", ".", ".", "."];
 	const [index, setIndex] = useState<number>(0);
 	const [activeIndex, setActiveIndex] = useState<number>(0);
 

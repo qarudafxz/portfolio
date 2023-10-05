@@ -32,7 +32,7 @@ export const About: FC = () => {
 						<ScrollAnimation
 							animateIn='fadeIn'
 							delay={150}>
-							<h1 className='font-title font-bold text-6xl my-3'>
+							<h1 className='font-title font-bold my-3 xxxs:text-xl lg:text-2xl xl:text-6xl'>
 								<span className='text-semi'>Francis</span> Tin-ao
 							</h1>
 						</ScrollAnimation>
@@ -51,7 +51,7 @@ export const About: FC = () => {
 						<ScrollAnimation
 							animateIn='fadeIn'
 							delay={250}>
-							<p className='font-text text-left xxxs:text-xs md:text-lg'>
+							<p className='font-text text-left xxxs:text-xs md:text-md lg:text-sm xl:text-lg'>
 								I am a 21-year-old Tech with an insatiable appetite for knowledge and a
 								boundless passion for the world of technology. My unwavering motivation
 								and unrelenting optimism define me as a student constantly hungry to
@@ -81,7 +81,7 @@ export const About: FC = () => {
 												key={idx}
 												className='flex items-center gap-2'>
 												<GiDiamonds className='text-2xl text-black' />
-												<p className='font-text text-left xxxs:text-xs md:text-lg'>
+												<p className='font-text text-left xxxs:text-xs md:text-lg lg:text-sm xl:text-xl'>
 													{item}
 												</p>
 											</div>

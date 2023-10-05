@@ -9,12 +9,16 @@ import { SkillsMarquee } from "./components/SkillsMarquee";
 import { Links } from "./components/Links";
 import { ScrollToTop } from "./components/ScrollToTop";
 import { Achievements } from "./pages/Achievements";
+
 import { Projects } from "./pages/Projects";
 import { Preloader } from "./pages/Preloader";
 import { Testimony } from "./pages/Testimony";
 
 //smooth scrolling component
 import SmoothScroll from "./components/SmoothScroll";
+import { Certificates } from "./pages/Certificates";
+import { Contact } from "./pages/Contact";
+import { Quote } from "./pages/Quote";
 
 function App() {
 	const [loading, setLoading] = useState(true);
@@ -36,8 +40,11 @@ function App() {
 				<SkillsMarquee />
 				<About />
 				<Achievements />
+				<Quote />
 				<Projects />
 				<Testimony />
+				<Certificates />
+				<Contact />
 			</SmoothScroll>
 		</>
 	);

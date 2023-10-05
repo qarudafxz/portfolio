@@ -41,32 +41,30 @@ export const Testimony: FC = () => {
 					<div className='flex flex-col gap-40'>
 						{test.map((testimony, idx) => (
 							<ParallaxProvider key={idx}>
-								{isOnPage && (
-									<Parallax
-										speed={-5}
-										translateX={["-500px", "1000px"]}>
-										<div
-											id='testimony' // Add an id to this element for scrolling detection
-											className='flex flex-col gap-4 py-24 border-t-2 border-zinc-400'>
-											<div className='flex gap-10'>
-												<h1 className='xxxs:text-semi font-bold text-[100px] font-span'>
-													"
+								<Parallax
+									speed={-5}
+									translateX={["-500px", "1000px"]}>
+									<div
+										id='testimony' // Add an id to this element for scrolling detection
+										className='flex flex-col gap-4 py-24 border-t-2 border-zinc-400'>
+										<div className='flex gap-10'>
+											<h1 className='xxxs:text-semi font-bold text-[100px] font-span'>
+												"
+											</h1>
+											<div className='flex flex-col mt-4'>
+												<h1 className='font-sub font-bold xxxs:text-2xl md:text-4xl lg:text-8xl hover:text-secondary'>
+													{testimony.test}
 												</h1>
-												<div className='flex flex-col mt-4'>
-													<h1 className='font-sub font-bold xxxs:text-2xl md:text-4xl lg:text-8xl'>
-														{testimony.test}
-													</h1>
-													<p className='font-sub mt-4 xxxs:text-md md:text-2xl'>
-														{testimony.author}
-													</p>
-													<p className='font-text xxxs:text-md md:text-2xl'>
-														{testimony.designation}
-													</p>
-												</div>
+												<p className='font-sub mt-4 xxxs:text-md md:text-2xl'>
+													{testimony.author}
+												</p>
+												<p className='font-text xxxs:text-md md:text-2xl'>
+													{testimony.designation}
+												</p>
 											</div>
 										</div>
-									</Parallax>
-								)}
+									</div>
+								</Parallax>
 							</ParallaxProvider>
 						))}
 					</div>
