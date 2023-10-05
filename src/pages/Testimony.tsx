@@ -1,9 +1,29 @@
-import { FC } from "react";
+import { FC, useState, useEffect } from "react";
 import logo from "../assets/logo.svg";
 import test from "../data/test.json";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 
 export const Testimony: FC = () => {
+	const [_, setIsOnPage] = useState(false);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			const testimonyElement = document.getElementById("testimony");
+			if (testimonyElement) {
+				const rect = testimonyElement.getBoundingClientRect();
+				setIsOnPage(rect.top <= window.innerHeight && rect.bottom >= 0);
+			}
+		};
+
+		window.addEventListener("scroll", handleScroll);
+
+		handleScroll();
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
+
 	return (
 		<div
 			className='w-full h-full bg-main'
@@ -25,7 +45,7 @@ export const Testimony: FC = () => {
 									speed={-5}
 									translateX={["-500px", "1000px"]}>
 									<div
-										id='testimony' // Add an id to this element for scrolling detection
+										id='testimony'
 										className='flex flex-col gap-4 py-24 border-t-2 border-zinc-400'>
 										<div className='flex gap-10'>
 											<h1 className='xxxs:text-semi font-bold text-[100px] font-span'>
