@@ -8,7 +8,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useGlitch } from "react-powerglitch";
 import { Link } from "react-scroll";
 import { HiArrowSmDown } from "react-icons/hi";
-import { useCounter } from "../../hooks/useCounter.ts";
+import { useCounter } from "../../hooks/useCounter.1.ts";
 import { Tooltip } from "@chakra-ui/react";
 import image from "../assets/image.png";
 

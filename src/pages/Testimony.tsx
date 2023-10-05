@@ -1,29 +1,9 @@
-import { FC, useState, useEffect } from "react";
+import { FC } from "react";
 import logo from "../assets/logo.svg";
 import test from "../data/test.json";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 
 export const Testimony: FC = () => {
-	const [isOnPage, setIsOnPage] = useState(false);
-
-	useEffect(() => {
-		const handleScroll = () => {
-			const testimonyElement = document.getElementById("testimony");
-			if (testimonyElement) {
-				const rect = testimonyElement.getBoundingClientRect();
-				setIsOnPage(rect.top <= window.innerHeight && rect.bottom >= 0);
-			}
-		};
-
-		window.addEventListener("scroll", handleScroll);
-
-		handleScroll();
-
-		return () => {
-			window.removeEventListener("scroll", handleScroll);
-		};
-	}, []);
-
 	return (
 		<div
 			className='w-full h-full bg-main'
