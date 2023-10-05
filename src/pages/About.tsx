@@ -41,7 +41,7 @@ export const About: FC = () => {
 							delay={180}>
 							<iframe
 								className='rounded-md my-4'
-								src='https://open.spotify.com/embed/track/56v8WEnGzLByGsDAXDiv4d?utm_source=generator&theme=0'
+								src='https://open.spotify.com/embed/track/5sdQOyqq2IDhvmx2lHOpwd?utm_source=generator&theme=0'
 								width='100%'
 								height='152'
 								allow='autoplay	*; encrypted-media *; fullscreen *; picture-in-picture *;'
