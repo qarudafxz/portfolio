@@ -19,6 +19,8 @@ import SmoothScroll from "./components/SmoothScroll";
 import { Certificates } from "./pages/Certificates";
 import { Contact } from "./pages/Contact";
 import { Quote } from "./pages/Quote";
+import Stack from "./pages/Stack";
+import Jobs from "./pages/Jobs";
 
 function App() {
 	const [loading, setLoading] = useState(true);
@@ -39,8 +41,10 @@ function App() {
 				<Landing />
 				<SkillsMarquee />
 				<About />
+				<Jobs />
 				<Achievements />
 				<Quote />
+				<Stack />
 				<Projects />
 				<Testimony />
 				<Certificates />

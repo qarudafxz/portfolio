@@ -58,38 +58,6 @@ export const About: FC = () => {
 								delve deeper into the intricacies of the Tech Industry.
 							</p>
 						</ScrollAnimation>
-						<div className='flex flex-col gap-4'>
-							<ScrollAnimation
-								animateIn='fadeIn'
-								delay={350}>
-								<h1 className='font-head mt-4 text-2xl'>Skills that I posess</h1>
-							</ScrollAnimation>
-							<ScrollAnimation
-								animateIn='fadeIn'
-								delay={450}>
-								<div className='grid grid-cols-2 gap-2 justify-between'>
-									{[
-										"Front-end Development",
-										"Back-end Development",
-										"Working with APIs",
-										"Technology Integrations",
-										"Proficient Database",
-										"Elegant UI/UX Designing",
-									].map((item, idx) => {
-										return (
-											<div
-												key={idx}
-												className='flex items-center gap-2'>
-												<GiDiamonds className='text-2xl text-black' />
-												<p className='font-text text-left xxxs:text-xs md:text-lg lg:text-sm xl:text-xl'>
-													{item}
-												</p>
-											</div>
-										);
-									})}
-								</div>
-							</ScrollAnimation>
-						</div>
 					</div>
 				</div>
 			</div>
