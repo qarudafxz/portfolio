@@ -1,6 +1,6 @@
 import { FC, useState, useEffect } from "react";
-import logo from "../assets/logo.svg";
-import pic from "../assets/land_pic.png";
+import logo from "../assets/logo.webp";
+import pic from "../assets/land_pic.webp";
 import { stack as Menu } from "react-burger-menu";
 import { RiMenu3Fill } from "react-icons/ri";
 import menu from "../data/menu.json";
@@ -12,7 +12,7 @@ import { Link } from "react-scroll";
 import { HiArrowSmDown } from "react-icons/hi";
 import { useCounter } from "../../hooks/useCounter.ts";
 import { Tooltip } from "@chakra-ui/react";
-import image from "../assets/image.png";
+import image from "../assets/image.webp";
 
 // import { SkillsMarquee } from "../components/SkillsMarquee";
 

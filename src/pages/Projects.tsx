@@ -2,12 +2,12 @@ import { FC } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import { FiArrowUpRight } from "react-icons/fi";
 
-import cafefy from "../assets/projects/cafefy.png";
-import pinpal from "../assets/projects/pinpals.png";
-import student from "../assets/projects/student.png";
-import ccislsg from "../assets/projects/ccislsg.png";
-import navig from "../assets/projects/navig.png";
-import studefy from "../assets/projects/studefy.png";
+import cafefy from "../assets/projects/cafefy.webp";
+import pinpal from "../assets/projects/pinpals.webp";
+import student from "../assets/projects/student.webp";
+import ccislsg from "../assets/projects/ccislsg.webp";
+import navig from "../assets/projects/navig.webp";
+import studefy from "../assets/projects/studefy.webp";
 
 export const Projects: FC = () => {
 	return (

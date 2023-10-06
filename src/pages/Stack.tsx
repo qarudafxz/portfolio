@@ -1,5 +1,5 @@
 import { FC } from "react";
-import stack from "../assets/stack.png";
+import stack from "../assets/stack.webp";
 import ScrollAnimation from "react-animate-on-scroll";
 
 const Stack: FC = () => {
