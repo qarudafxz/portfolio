@@ -90,6 +90,9 @@ export const Landing: FC = () => {
 							{menu.map((item, idx) => {
 								return (
 									<Link
+										onClick={() =>
+											document.getElementById("react-burger-cross-btn")?.click()
+										}
 										key={idx}
 										to={item.link}
 										spy={true}
