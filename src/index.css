@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Gabarito:wght@500&family=Kanit:wght@600&family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playball&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -153,4 +154,30 @@ span.bm-cross > span:nth-child(1) {
 	100% {
 		transform: translate(50%, 0%);
 	}
+}
+
+h1.customHover {
+	position: relative;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+h1.customHover::before {
+	content: "";
+	position: absolute;
+	width: 0%; /* Adjust the width as needed */
+	height: 2.9px; /* Adjust the underline thickness as needed */
+	background-color: #cb594c; /* Replace with your desired underline color */
+	top: calc(
+		50% + 45px
+	); /* Center it vertically, adjust 5px based on your font size */
+	left: 50%; /* Center it horizontally */
+	transform: translateX(
+		-50%
+	); /* Move it back by half of its width to center it */
+	transition: width 0.3s ease-in-out;
+}
+
+h1.customHover:hover::before {
+	width: 55%;
 }

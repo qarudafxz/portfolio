@@ -36,6 +36,7 @@ export default {
 				head: ["Archivo Black", "sans-serif"],
 				sub: ["Gabarito", "sans-serif"],
 				text: ["Poppins", "sans-serif"],
+				email: ["Playball", "serif"],
 			},
 		},
 	},

@@ -12,6 +12,7 @@ export const Certificates: FC = () => {
 				<div className='mt-10'>
 					<Marquee
 						speed={60}
+						direction='right'
 						className='flex'>
 						{certificates.map((cert, idx) => (
 							<div

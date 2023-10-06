@@ -8,6 +8,7 @@ export const SkillsMarquee: FC = () => {
 		<Marquee
 			speed={95}
 			gradientWidth={25}
+			direction='right'
 			className='bg-black p-14'>
 			{skills.map((skill, idx: number) => {
 				return (
