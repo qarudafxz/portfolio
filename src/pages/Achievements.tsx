@@ -15,20 +15,22 @@ export const Achievements: FC = () => {
 		{
 			title: "3rd Placer Galileo Hackathon",
 			desc:
-				"Unexpectedly won with our solution - I AM SAFE: A IoT arduino-based device that detects an immediate flood",
+				"Unexpectedly won with our solution - I AM SAFE: A IoT arduino-based device that detects an immediate flood and send signals of information to locals.",
 		},
 		{
 			title: "DICT Diagnostic Exam Passer",
 			desc:
-				"Took the test for experience but unexpectedly passed the diagnostic exam.",
+				"Took the test for experience purposes only but unexpectedly passed the diagnostic exam.",
 		},
 		{
 			title: "1st Place Regional Startup Competition",
-			desc: "Biggest achievement so far.",
+			desc:
+				"My team got into the Philippine Startup Challenge 7 Regional Level and surprisingly, we took the 1st runner up crown.",
 		},
 		{
 			title: "College-wide T-shirt Design Contest 1st runner up",
-			desc: "Was the representative in our college",
+			desc:
+				"My entry served as the representative of our college and won 1st runner up.",
 		},
 	];
 

@@ -12,7 +12,7 @@ const Stack: FC = () => {
 						delay={15}>
 						<div className='flex flex-col gap-10'>
 							<h1 className='font-bold font-head text-semi xxxs:text-xl xs:text-4xl lg:text-5xl'>
-								Equipped with{" "}
+								Skill equipped with{" "}
 								<span className=' bg-clip-text text-transparent bg-gradient-to-tr from-zinc-900 to-zinc-500'>
 									modern technologies
 								</span>

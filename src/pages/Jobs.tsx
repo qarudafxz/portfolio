@@ -64,7 +64,7 @@ function Jobs() {
 		<div className='bg-main h-screen'>
 			<div className='flex flex-col gap-4 w-full mb-10 container'>
 				<h1 className='font-span text-black mt-4 font-extrabold xxxs:text-2xl w-11/12 lg:text-4xl w-9/12 xl:text-6xl 2xl:text-7xl w-5/12'>
-					What works I have
+					Experiences
 				</h1>
 			</div>
 			<div className='flex flex-col gap-8 container'>

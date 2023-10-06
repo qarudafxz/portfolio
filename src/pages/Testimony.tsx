@@ -46,13 +46,15 @@ export const Testimony: FC = () => {
 									translateX={["-500px", "1000px"]}>
 									<div
 										id='testimony'
-										className='flex flex-col gap-4 py-24 border-t-2 border-zinc-400'>
+										className='flex flex-col gap-4 py-24 border-t-2 border-zinc-400 lg:px-36'>
 										<div className='flex gap-10'>
 											<h1 className='xxxs:text-semi font-bold text-[100px] font-span'>
 												"
 											</h1>
 											<div className='flex flex-col mt-4'>
-												<h1 className='font-sub font-bold xxxs:text-2xl md:text-4xl lg:text-8xl hover:text-secondary'>
+												<h1
+													className={`font-sub font-bold xxxs:text-lg tracking-tighter md:text-3xl lg:text-6xl
+													} hover:text-secondary `}>
 													{testimony.test}
 												</h1>
 												<p className='font-sub mt-4 xxxs:text-md md:text-2xl'>

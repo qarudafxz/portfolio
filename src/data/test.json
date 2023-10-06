@@ -1,18 +1,23 @@
 [
  {
-  "test": "Quiet a good kid who's a fast learner",
+  "test": "He has been my student ever since, and he is actively participating in my class.",
   "author": "Dexter Romaguera",
-  "designation": "Instructor, VLRC"
+  "designation": "Instructor, CCIS"
  },
  {
-  "test": "Francis has always been advanced in the class. Such an impressive kid.",
+  "test": "Francis is intellectually creative! 💯.",
   "author": "Edwin Jarlata",
-  "designation": "Instructor, Navigatu"
+  "designation": "Instructor, CCIS"
  },
  {
-  "test": "A Great Leader- I have been mentoring him and did well with his teammates in their startup.",
+  "test": "Francis' exceptional dedication, leadership, and ability to connect with people inspire others. He's destined for continued success in all endeavors.",
   "author": "Jenelyn Refamonte",
-  "designation": "Instructor, Navigatu"
+  "designation": "Instructor, CCIS & Mentor of ParaGO"
+ },
+ {
+  "test": "Together, we founded a beacon of smart tourism and hospitality: paraGO, entrusting the grand vision of Mr. Francis Tin-ao. Brilliance should never be wasted.",
+  "author": "James Rosales",
+  "designation": "Co-founder, ParaGo & Programmer, DOST"
  }
 
 ]
