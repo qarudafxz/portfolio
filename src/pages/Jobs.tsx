@@ -5,7 +5,7 @@ import { BsFillArrowDownRightCircleFill } from "react-icons/bs";
 
 import jobs from "../data/jobs.json";
 
-function SetOfJobs({ name, desc }): ReactNode {
+function SetOfJobs({ name, desc }: { name: string; desc: string }): ReactNode {
 	const [collapsed, setCollapsed] = useState(true);
 	const iconSize =
 		window.innerWidth >= 280 && window.innerWidth <= 640 ? 40 : 90;

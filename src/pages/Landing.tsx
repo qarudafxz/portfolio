@@ -5,10 +5,12 @@ import { stack as Menu } from "react-burger-menu";
 import { RiMenu3Fill } from "react-icons/ri";
 import menu from "../data/menu.json";
 import { motion, useAnimation } from "framer-motion";
+//eslint-disable-next-line
+//@ts-ignore
 import { useGlitch } from "react-powerglitch";
 import { Link } from "react-scroll";
 import { HiArrowSmDown } from "react-icons/hi";
-import { useCounter } from "../../hooks/useCounter.1.ts";
+import { useCounter } from "../../hooks/useCounter.ts";
 import { Tooltip } from "@chakra-ui/react";
 import image from "../assets/image.png";
 

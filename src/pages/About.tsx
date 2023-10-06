@@ -1,7 +1,6 @@
 import { FC } from "react";
 import me from "../assets/me.png";
 import ScrollAnimation from "react-animate-on-scroll";
-import { GiDiamonds } from "react-icons/gi";
 import { motion } from "framer-motion";
 
 export const About: FC = () => {
