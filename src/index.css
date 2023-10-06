@@ -9,15 +9,15 @@ body {
 	overflow-x: hidden;
 }
 
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
 	width: 4px;
 }
 
-body::-webkit-scrollbar-track {
-	background-color: transparent;
+::-webkit-scrollbar-track {
+	background-color: rgba(255, 255, 255, 0);
 }
 
-body::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
 	background-color: #000;
 	border-radius: 40px;
 }
@@ -135,4 +135,22 @@ span.bm-cross > span:nth-child(1) {
 	background-color: #fff;
 	color: #cb594c;
 	transition: 0.5s;
+}
+
+.carousel-cert {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+	white-space: nowrap;
+	animation: infinite-scroll 4s linear infinite;
+}
+
+@keyframes infinite-scroll {
+	0% {
+		transform: translate(0, 0);
+	}
+	100% {
+		transform: translate(50%, 0%);
+	}
 }

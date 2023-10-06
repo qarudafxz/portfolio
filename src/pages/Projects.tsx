@@ -6,6 +6,8 @@ import cafefy from "../assets/projects/cafefy.png";
 import pinpal from "../assets/projects/pinpals.png";
 import student from "../assets/projects/student.png";
 import ccislsg from "../assets/projects/ccislsg.png";
+import navig from "../assets/projects/navig.png";
+import studefy from "../assets/projects/studefy.png";
 
 export const Projects: FC = () => {
 	return (
@@ -174,13 +176,13 @@ export const Projects: FC = () => {
 						{/* Student anon */}
 						<div className='col col-span-5 relative group'>
 							<div
-								className='bg-[#eaa0ff] w-full rounded-md shadow-xl overflow-hidden'
+								className='bg-zinc-400 w-full rounded-md shadow-xl overflow-hidden'
 								style={{
 									height: "70%",
 								}}>
 								<img
-									src={student}
-									alt='student anon'
+									src={navig}
+									alt='NavigRater'
 									className='w-full h-75% transform scale-100 group-hover:scale-110 transition-transform'
 									style={{
 										objectFit: "cover",
@@ -189,10 +191,10 @@ export const Projects: FC = () => {
 								/>
 							</div>
 							<div className='absolute top-0 left-0 right-0 bottom-0 opacity-0 group-hover:opacity-90 bg-opacity-75 bg-black text-white flex flex-col justify-center items-center transition-opacity duration-300'>
-								<h2 className='text-xl font-bold mb-2 font-head'>Student Anon</h2>
+								<h2 className='text-xl font-bold mb-2 font-head'>NavigRater</h2>
 								<p className='font-text xxxs:text-[9px] px-8 md:text-sm'>
-									An exclusive website wherein you can communicate with students
-									anonymously and vent about your problems.
+									a commissioned project aimed to rate a specific location that's being
+									pinned by the user on the map.
 								</p>
 								<a
 									href='https://student-anon.vercel.app/'
@@ -207,13 +209,13 @@ export const Projects: FC = () => {
 						{/* CCISLSG */}
 						<div className='col-md col-md-7 relative group xxxs:-mt-12 md:m-0'>
 							<div
-								className='bg-[#ffb896] w-full rounded-md shadow-xl overflow-hidden'
+								className='bg-[#8ca9ae] w-full rounded-md shadow-xl overflow-hidden'
 								style={{
 									height: "70%",
 								}}>
 								<img
-									src={ccislsg}
-									alt='ccislsg'
+									src={studefy}
+									alt='studefy'
 									className='w-full h-full transform scale-100 group-hover:scale-110 transition-transform'
 									style={{
 										objectFit: "cover",
@@ -222,20 +224,12 @@ export const Projects: FC = () => {
 								/>
 							</div>
 							<div className='absolute top-0 left-0 right-0 bottom-0 opacity-0 group-hover:opacity-90 bg-opacity-75 bg-black text-white flex flex-col justify-center items-center transition-opacity duration-300'>
-								<h2 className='text-xl font-bold mb-2 font-head'>
-									CCISLSG Suggestion Board
-								</h2>
+								<h2 className='text-xl font-bold mb-2 font-head'>Studefy</h2>
 								<p className='font-text xxxs:text-[9px] px-8 md:text-sm'>
-									A website for students to provide necessary suggestions for the
-									betterment of the college.
+									A web-based application, developed as our final project in IT106. It
+									leverages XML and DOM Parser in conjunction with Java Remote Method
+									Invocation.
 								</p>
-								<a
-									href='https://suggestion-board.ccislsg.com/'
-									target='_blank'
-									className='bg-black flex items-center gap-2 px-3 py-2 rounded-md text-white font-text mt-4 hover:no-underline'>
-									View Site
-									<FiArrowUpRight />
-								</a>
 							</div>
 						</div>
 						{/* End of CCISLSG */}

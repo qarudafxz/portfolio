@@ -1,10 +1,13 @@
 import { ReactNode } from "react";
 import { useEffect, useRef } from "react";
+import { useMediaQuery } from "../../hooks/useMediaQuery";
 import useWindowSize from "../../hooks/useWindowSize";
 
 const SmoothScroll = ({ children }: { children: ReactNode }) => {
 	const windowSize = useWindowSize();
-
+	const isSmallMobile = useMediaQuery("(max-width: 375px)");
+	const isMobile = useMediaQuery("(max-width: 767px)");
+	const isTablet = useMediaQuery("(max-width: 1024px)");
 	const scrollingContainerRef = useRef<HTMLDivElement>(null);
 
 	const data = {
@@ -22,19 +25,7 @@ const SmoothScroll = ({ children }: { children: ReactNode }) => {
 		if (scrollingContainerRef.current) {
 			document.body.style.height = `${
 				scrollingContainerRef.current.getBoundingClientRect().height +
-				(window.innerWidth <= 238
-					? 256
-					: window.innerWidth > 238 && window.innerWidth <= 320
-					? 360
-					: window.innerWidth > 320 && window.innerWidth <= 480
-					? 620
-					: window.innerWidth > 480 && window.innerWidth <= 768
-					? 640
-					: window.innerWidth > 768 && window.innerWidth <= 1024
-					? 740
-					: window.innerWidth > 1024 && window.innerWidth <= 1280
-					? 940
-					: 1045)
+				(isSmallMobile ? 1440 : isMobile ? 1450 : isTablet ? 1300 : 1400)
 			}px`;
 		}
 	};
