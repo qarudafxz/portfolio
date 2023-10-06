@@ -4,6 +4,7 @@ import test from "../data/test.json";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 
 export const Testimony: FC = () => {
+	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	const [_, setIsOnPage] = useState(false);
 
 	useEffect(() => {
