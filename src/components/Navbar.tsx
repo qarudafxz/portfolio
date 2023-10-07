@@ -29,7 +29,7 @@ export const Navbar: FC = () => {
 				animate={{ y: 0 }}
 				transition={{
 					duration: 0.5,
-					delay: 1.5,
+					delay: 0.64,
 				}}
 				className='font-sub text-white bg-black xxxs:hidden md:block fixed bottom-6 z-10 cursor-pointer rounded-full shadow-2xl pr-2 outline outline-zinc-900'>
 				<div className='flex gap-4 items-center py-2 px-2'>

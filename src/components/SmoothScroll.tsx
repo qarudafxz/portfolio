@@ -8,6 +8,7 @@ const SmoothScroll = ({ children }: { children: ReactNode }) => {
 	const isSmallMobile = useMediaQuery("(max-width: 375px)");
 	const isMobile = useMediaQuery("(max-width: 767px)");
 	const isTablet = useMediaQuery("(max-width: 1024px)");
+	const isLargeLaptop = useMediaQuery("(max-width: 1440px)");
 	const scrollingContainerRef = useRef<HTMLDivElement>(null);
 
 	const data = {
@@ -25,7 +26,15 @@ const SmoothScroll = ({ children }: { children: ReactNode }) => {
 		if (scrollingContainerRef.current) {
 			document.body.style.height = `${
 				scrollingContainerRef.current.getBoundingClientRect().height +
-				(isSmallMobile ? 1220 : isMobile ? 1430 : isTablet ? 1290 : 1680)
+				(isSmallMobile
+					? 1180
+					: isMobile
+					? 1450
+					: isTablet
+					? 1220
+					: isLargeLaptop
+					? 1500
+					: 1445)
 			}px`;
 		}
 	};
