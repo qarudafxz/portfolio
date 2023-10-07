@@ -43,9 +43,9 @@ function App() {
 			<SmoothScroll>
 				<div id='home'>
 					<Landing />
-					<SkillsMarquee />
 				</div>
 				<div id='about'>
+					<SkillsMarquee />
 					<About />
 					<Jobs />
 					<Achievements />
