@@ -57,9 +57,9 @@ function App() {
 				</div>
 				<div id='testimonials'>
 					<Testimony />
-					<Certificates />
 				</div>
 				<div id='contact'>
+					<Certificates />
 					<Contact />
 				</div>
 			</SmoothScroll>
