@@ -1,10 +1,27 @@
-import { FC } from "react";
+import { FC, useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import menu from "../data/menu.json";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import logo from "../assets/logo.svg";
 
 export const Navbar: FC = () => {
+	const controls = useAnimation();
+	const [direction, setDirection] = useState<number>(1);
+
+	useEffect(() => {
+		controls.start({
+			rotate: [null, 480 * direction],
+			transition: {
+				duration: 3,
+				repeat: Infinity,
+				ease: "linear",
+			},
+		});
+
+		setTimeout(() => {
+			setDirection(-1 * direction);
+		}, 3000);
+	}, [direction, controls]);
 	return (
 		<div className='flex justify-center'>
 			<motion.div
@@ -14,12 +31,16 @@ export const Navbar: FC = () => {
 					duration: 0.5,
 					delay: 1.5,
 				}}
-				className='font-sub text-white bg-black xxxs:hidden md:block fixed bottom-6 z-10 cursor-pointer rounded-full shadow-2xl pr-2'>
+				className='font-sub text-white bg-black xxxs:hidden md:block fixed bottom-6 z-10 cursor-pointer rounded-full shadow-2xl pr-2 outline outline-zinc-900'>
 				<div className='flex gap-4 items-center py-2 px-2'>
-					<img
+					<motion.img
+						animate={{
+							transition: { duration: 2.01, repeat: Infinity, ease: "linear" },
+							rotate: [null, 360 * direction],
+						}}
 						src={logo}
 						alt=''
-						className='w-10 bg-zinc-900 p-1 rounded-full'
+						className='w-10 bg-zinc-900 p-2 rounded-full'
 					/>
 					{menu.map((item, idx) => {
 						return (
@@ -29,6 +50,8 @@ export const Navbar: FC = () => {
 								spy={true}
 								smooth={true}
 								offset={-70}
+								//eslint-disable-next-line
+								//@ts-ignore
 								className={({ isActive }: { isActive: string }) =>
 									`cursor-pointer px-3 py-2 ${
 										isActive
