@@ -29,7 +29,7 @@ export const Navbar: FC = () => {
 								spy={true}
 								smooth={true}
 								offset={-70}
-								className={({ isActive }: { isActive: boolean }) =>
+								className={({ isActive }: { isActive: string }) =>
 									`cursor-pointer px-3 py-2 ${
 										isActive
 											? " text-black bg-white rounded-full "
