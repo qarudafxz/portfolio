@@ -1,4 +1,5 @@
 import { FC, useState, useEffect } from "react";
+//eslint-disable-next-line
 import logo from "../assets/logo.webp";
 import pic from "../assets/land_pic.webp";
 import { stack as Menu } from "react-burger-menu";
@@ -42,7 +43,7 @@ export const Landing: FC = () => {
 		<div
 			className='bg-main w-full xxxs:pb-16 md:pb-0'
 			id='home'>
-			<div className='container '>
+			<div className='container'>
 				<div className='navbar navbar-expand-md p-4'>
 					{/* Logo */}
 					<div className='w-full'>
@@ -50,7 +51,7 @@ export const Landing: FC = () => {
 							initial={{ y: -1000, opacity: 0 }}
 							animate={{ y: 0, opacity: 1 }}
 							transition={{ duration: 0.99999 }}
-							className='flex justify-between w-full'>
+							className='flex justify-between w-full md:justify-center'>
 							<h1 className='flex items-center font-bold font-span'>
 								FR
 								<motion.img
@@ -63,23 +64,6 @@ export const Landing: FC = () => {
 								/>
 								NCIS
 							</h1>
-							<div className='xxxs:hidden md:flex justify-end items-center w-full'>
-								<div className='flex flex-col font-title'>
-									{menu.map((item, idx) => {
-										return (
-											<Link
-												key={idx}
-												to={item.link}
-												spy={true}
-												smooth={true}
-												offset={-70}
-												className='mouseHover cursor-pointer hover:text-[#cb594c] hover:no-underline'>
-												{item.label}
-											</Link>
-										);
-									})}
-								</div>
-							</div>
 						</motion.div>
 					</div>
 					{/* Menu for mobile*/}

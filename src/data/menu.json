@@ -12,7 +12,10 @@
   "label": "PROJECTS",
   "link": "projects"
  },
-
+ {
+  "label": "TESTIMONIALS",
+  "link": "testimonials"
+ },
  {
   "label": "CONTACT",
   "link": "contact"

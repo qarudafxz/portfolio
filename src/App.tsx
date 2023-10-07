@@ -22,6 +22,8 @@ import { Quote } from "./pages/Quote";
 import Stack from "./pages/Stack";
 import Jobs from "./pages/Jobs";
 
+import { Navbar } from "./components/Navbar";
+
 function App() {
 	const [loading, setLoading] = useState(true);
 
@@ -37,18 +39,29 @@ function App() {
 		<>
 			<Links />
 			<ScrollToTop />
+			<Navbar />
 			<SmoothScroll>
-				<Landing />
-				<SkillsMarquee />
-				<About />
-				<Jobs />
-				<Achievements />
-				<Quote />
-				<Stack />
-				<Projects />
-				<Testimony />
-				<Certificates />
-				<Contact />
+				<div id='home'>
+					<Landing />
+					<SkillsMarquee />
+				</div>
+				<div id='about'>
+					<About />
+					<Jobs />
+					<Achievements />
+					<Quote />
+				</div>
+				<div id='projects'>
+					<Stack />
+					<Projects />
+				</div>
+				<div id='testimonials'>
+					<Testimony />
+					<Certificates />
+				</div>
+				<div id='contact'>
+					<Contact />
+				</div>
 			</SmoothScroll>
 		</>
 	);
