@@ -27,14 +27,14 @@ const SmoothScroll = ({ children }: { children: ReactNode }) => {
 			document.body.style.height = `${
 				scrollingContainerRef.current.getBoundingClientRect().height +
 				(isSmallMobile
-					? 1180
+					? 1280
 					: isMobile
-					? 1450
+					? 1550
 					: isTablet
-					? 1220
+					? 1320
 					: isLargeLaptop
-					? 1500
-					: 1660)
+					? 1590
+					: 1740)
 			}px`;
 		}
 	};
