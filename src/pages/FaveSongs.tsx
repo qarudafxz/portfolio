@@ -5,15 +5,7 @@ import ReactCardCarousel from "react-card-carousel";
 import songs from "../data/songs.json";
 import { SongCard } from "../components/SongCard";
 
-interface FaveSongsProps {
-	idx: number;
-	cover: string;
-	title: string;
-	author: string;
-	spotify: string;
-}
-
-class FaveSongs extends React.Component<FaveSongsProps> {
+class FaveSongs extends React.Component {
 	render() {
 		return (
 			<div className='w-full bg-main pb-36'>
