@@ -11,7 +11,7 @@ export const About: FC = () => {
 	return (
 		<div
 			id='about'
-			className='w-full p-4 bg-main xxxs:h-[1100px] lg:h-screen'>
+			className='w-full p-4 bg-main xxxs:h-[1100px]'>
 			<div className='container'>
 				<div className='row items-center'>
 					<div className='xxxs:col col-span-1 md:col col-md-6'>
@@ -39,31 +39,25 @@ export const About: FC = () => {
 								<span className='text-semi'>Francis</span> Tin-ao
 							</h1>
 						</ScrollAnimation>
+
 						<ScrollAnimation
 							animateIn='fadeIn'
-							delay={180}>
-							<iframe
-								className='rounded-md my-4'
-								src='https://open.spotify.com/embed/track/5sdQOyqq2IDhvmx2lHOpwd?utm_source=generator&theme=0'
-								width='100%'
-								height='152'
-								allow='autoplay	*; encrypted-media *; fullscreen *; picture-in-picture *;'
-								loading='lazy'
-							/>
-						</ScrollAnimation>
-						<ScrollAnimation
-							animateIn='fadeIn'
-							delay={250}>
-							<p className='font-text text-left pb-6 xxxs:text-xs md:text-md lg:text-sm xl:text-lg'>
+							delay={150}>
+							<p className='font-text text-justify pb-6 xxxs:text-xs md:text-md lg:text-sm xl:text-lg'>
 								I am a 21-year-old Tech with an insatiable appetite for knowledge and a
 								boundless passion for the world of technology. My unwavering motivation
 								and unrelenting optimism define me as a student constantly hungry to
-								delve deeper into the intricacies of the Tech Industry.
+								delve deeper into the intricacies of the Tech Industry. At the heart of
+								my current journey lies a relentless pursuit of web application
+								development, accompanied by a thirst for mastering diverse programming
+								languages and modern web technologies. I am not merely an observer but
+								an active participant in the ever-evolving landscape of tech, determined
+								to contribute my skills and creativity to shape its future.
 							</p>
 						</ScrollAnimation>
 						<ScrollAnimation
 							animateIn='fadeIn'
-							delay={340}
+							delay={240}
 							className='w-44'>
 							<Tooltip
 								label='Check out my resume 😃'

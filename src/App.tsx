@@ -22,6 +22,7 @@ import Stack from "./pages/Stack";
 import Jobs from "./pages/Jobs";
 
 import { Navbar } from "./components/Navbar";
+import FaveSongs from "./pages/FaveSongs";
 
 function App() {
 	const [loading, setLoading] = useState(true);
@@ -46,6 +47,7 @@ function App() {
 				<div id='about'>
 					<SkillsMarquee />
 					<About />
+					<FaveSongs />
 					<Jobs />
 					<Achievements />
 					<Quote />
