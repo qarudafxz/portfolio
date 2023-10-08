@@ -1,6 +1,8 @@
 import { FC } from "react";
 import certificates from "../data/certificates.json";
 import Marquee from "react-fast-marquee";
+import { PiMedalFill } from "react-icons/pi";
+import { motion } from "framer-motion";
 
 export const Certificates: FC = () => {
 	return (
@@ -16,13 +18,22 @@ export const Certificates: FC = () => {
 						className='flex'>
 						{certificates.map((cert, idx) => (
 							<div
-								className='flex bg-zinc-950 border-2 border-zinc-400 rounded-md shadow-2xl mr-3'
+								className='flex bg-[#cb594c] border border-zinc-200 rounded-md shadow-md mr-3'
 								key={idx}>
 								<div className='w-64 h-64 flex flex-col items-center justify-center text-center p-6'>
-									<h1 className='font-bold font-sub text-2xl leading-none text-semi'>
+									<motion.div
+										animate={{ y: [0, 4, 0] }}
+										transition={{ duration: 1, repeat: Infinity }}>
+										<PiMedalFill
+											size={40}
+											className='mb-3 text-[#6d2a22]'
+										/>
+									</motion.div>
+									<h1 className='font-bold font-sub text-2xl leading-none text-white'>
 										{cert.title}
 									</h1>
-									<p className='text-white mt-4 font-text text-sm md:text-xs'>
+
+									<p className='bg-[#c25144] py-2 rounded-full px-4 text-white mt-4 font-text text-sm md:text-xs'>
 										{cert.host}
 									</p>
 								</div>

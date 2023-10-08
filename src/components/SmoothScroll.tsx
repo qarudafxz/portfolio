@@ -34,7 +34,7 @@ const SmoothScroll = ({ children }: { children: ReactNode }) => {
 					? 1220
 					: isLargeLaptop
 					? 1500
-					: 1445)
+					: 1660)
 			}px`;
 		}
 	};
