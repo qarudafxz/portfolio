@@ -1,9 +1,12 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 import me from "../assets/me.webp";
 import ScrollAnimation from "react-animate-on-scroll";
 import { motion } from "framer-motion";
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 export const About: FC = () => {
+	const [hovered, setHovered] = useState<boolean>(false);
+
 	return (
 		<div
 			id='about'
@@ -50,12 +53,30 @@ export const About: FC = () => {
 						<ScrollAnimation
 							animateIn='fadeIn'
 							delay={250}>
-							<p className='font-text text-left xxxs:text-xs md:text-md lg:text-sm xl:text-lg'>
+							<p className='font-text text-left pb-6 xxxs:text-xs md:text-md lg:text-sm xl:text-lg'>
 								I am a 21-year-old Tech with an insatiable appetite for knowledge and a
 								boundless passion for the world of technology. My unwavering motivation
 								and unrelenting optimism define me as a student constantly hungry to
 								delve deeper into the intricacies of the Tech Industry.
 							</p>
+						</ScrollAnimation>
+						<ScrollAnimation
+							animateIn='fadeIn'
+							delay={340}
+							className='w-44'>
+							<a
+								onMouseEnter={() => setHovered(true)}
+								onMouseLeave={() => setHovered(false)}
+								href='https://drive.google.com/file/d/1vScfxIeHWuGAl3JT_EYfTj7Zy7dLCS-g/view?usp=sharing'
+								target='_blank'
+								className='flex gap-2 items-center bg-black font-title text-white px-4 py-2 rounded-full shadow-2xl hover:no-underline hover:bg-[#cb594c] duration-200'>
+								View Resume
+								<motion.div
+									initial={{ x: 0 }}
+									animate={{ x: hovered ? 10 : 0 }}>
+									<AiOutlineArrowRight size={16} />
+								</motion.div>
+							</a>
 						</ScrollAnimation>
 					</div>
 				</div>

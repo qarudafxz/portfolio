@@ -27,7 +27,7 @@ function SetOfJobs({ name, desc }: { name: string; desc: string }): ReactNode {
 			exit={{ opacity: 0 }}
 			transition={{ duration: 0.5 }}>
 			<button
-				className='font-head text-semi border-b border-[#212121] pb-4 flex gap-4 items-center justify-between font-bold hover:text-text duration-150 xxxs:text-xl md:text-6xl'
+				className='font-head text-semi border-b border-[#212121] pb-4 flex gap-4 items-center justify-between font-bold hover:text-[#aa4f45] duration-150 xxxs:text-xl md:text-6xl'
 				onClick={toggleCollapse}>
 				{name}
 				<motion.div
