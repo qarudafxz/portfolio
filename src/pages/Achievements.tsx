@@ -46,7 +46,7 @@ export const Achievements: FC = () => {
 	}, [dots]);
 
 	return (
-		<div className='bg-main w-full xxxs:h-[2140px] md:h-[550px]'>
+		<div className='bg-main w-full xxxs:h-[2140px] md:h-[1490px] lg:h-[550px]'>
 			<div className='container'>
 				<h1 className='text-center font-sub text-5xl'>
 					What I've achieved so far
@@ -66,7 +66,7 @@ export const Achievements: FC = () => {
 						return (
 							<div
 								key={idx}
-								className='col-md md:col-lg-10 lg:col-span-1'>
+								className='col-lg md:col-lg-6 lg:col-span-1'>
 								<AchievementCard
 									key={idx}
 									idx={idx}
