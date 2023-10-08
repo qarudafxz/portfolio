@@ -3,6 +3,7 @@ import me from "../assets/me.webp";
 import ScrollAnimation from "react-animate-on-scroll";
 import { motion } from "framer-motion";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import { Tooltip } from "@chakra-ui/react";
 
 export const About: FC = () => {
 	const [hovered, setHovered] = useState<boolean>(false);
@@ -64,19 +65,24 @@ export const About: FC = () => {
 							animateIn='fadeIn'
 							delay={340}
 							className='w-44'>
-							<a
-								onMouseEnter={() => setHovered(true)}
-								onMouseLeave={() => setHovered(false)}
-								href='https://drive.google.com/file/d/1vScfxIeHWuGAl3JT_EYfTj7Zy7dLCS-g/view?usp=sharing'
-								target='_blank'
-								className='flex gap-2 items-center bg-black font-title text-white px-4 py-2 rounded-full shadow-2xl hover:no-underline hover:bg-[#cb594c] duration-200'>
-								View Resume
-								<motion.div
-									initial={{ x: 0 }}
-									animate={{ x: hovered ? 10 : 0 }}>
-									<AiOutlineArrowRight size={16} />
-								</motion.div>
-							</a>
+							<Tooltip
+								label='Check out my resume 😃'
+								hasArrow
+								className='text-white text-xs bg-black py-1 px-2 rounded-md font-sub'>
+								<a
+									onMouseEnter={() => setHovered(true)}
+									onMouseLeave={() => setHovered(false)}
+									href='https://drive.google.com/file/d/1vScfxIeHWuGAl3JT_EYfTj7Zy7dLCS-g/view?usp=sharing'
+									target='_blank'
+									className='flex gap-2 items-center bg-black font-title text-white px-4 py-2 rounded-full shadow-2xl hover:no-underline hover:bg-[#cb594c] duration-200'>
+									View Resume
+									<motion.div
+										initial={{ x: 0 }}
+										animate={{ x: hovered ? 10 : 0 }}>
+										<AiOutlineArrowRight size={16} />
+									</motion.div>
+								</a>
+							</Tooltip>
 						</ScrollAnimation>
 					</div>
 				</div>
