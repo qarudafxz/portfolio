@@ -34,9 +34,12 @@ export const AchievementCard: FC<AchievementProps> = ({
 				activeIndex === idx ? "text-white" : "bg-[#c4c2b3] text-black"
 			} hover:bg-secondary hover:text-black duration-150 hover:shadow-2xl hover:border-2 border-zinc-400`}>
 			<h1 className='font-head text-6xl'>{idx + 1}</h1>
-			<div className='mt-14'>
+			<div className='mt-3'>
 				<h1 className='font-head text-2xl'>{title}</h1>
-				<p className={`font-text text-sm ${desc.length > 60 ? "mt-2" : "mt-2"}`}>
+				<p
+					className={`font-text text-sm ${
+						desc.length > 60 ? "mt-2" : "mt-2"
+					} lg:text-xs`}>
 					{desc}
 				</p>
 			</div>

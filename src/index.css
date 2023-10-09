@@ -47,24 +47,25 @@ body {
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
-	position: relative;
-	right: 35px;
-	top: 10px;
-	height: 50px;
-	width: 50px;
+	position: absolute;
+	right: 15px;
+	top: -20px;
+	height: 90px;
+	width: 90px;
 }
 
-#react-burger-cross-btn {
-	position: fixed;
-	bottom: 50px;
+.bm-cross-button > button {
+	position: absolute;
+	left: -70px;
+	top: -20px;
 }
 
 .bm-cross {
 	right: 38px;
 	bottom: 8px;
 	background: #bdc3c7;
-	width: 25px;
-	height: 25px;
+	width: 75px;
+	height: 75px;
 }
 
 /* adjust the width and height of the first span in bm-cross */

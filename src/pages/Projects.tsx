@@ -50,14 +50,14 @@ export const Projects: FC = () => {
 								/>
 							</div>
 							<div className='absolute top-0 left-0 right-0 bottom-0 opacity-0 group-hover:opacity-90 bg-opacity-75 bg-black text-white flex flex-col justify-center items-center transition-opacity duration-300'>
-								<h2 className='text-xl font-bold mb-2 font-head'>Cafefy</h2>
+								<h2 className='text-xl font-bold mb-[3px] -mt-12 font-head'>Cafefy</h2>
 								<p className='font-text xxxs:text-[9px] px-8 md:text-sm'>
 									A platform to promote local cafes in Butuan City
 								</p>
 								<a
 									href='https://cafefy.francistinao.tech/'
 									target='_blank'
-									className='bg-black flex items-center gap-2 px-3 py-2 rounded-md text-white font-text mt-4 hover:no-underline'>
+									className='bg-black flex items-center gap-2 px-3 py-2 rounded-md text-white font-text xxxs:text-[10px] hover:no-underline'>
 									View Site
 									<FiArrowUpRight />
 								</a>
@@ -82,15 +82,15 @@ export const Projects: FC = () => {
 								/>
 							</div>
 							<div className='absolute top-0 left-0 right-0 bottom-0 opacity-0 group-hover:opacity-90 bg-opacity-75 bg-black text-white flex flex-col justify-center items-center transition-opacity duration-300'>
-								<h2 className='text-xl font-bold mb-2 font-head'>Pinpal</h2>
-								<p className='font-text xxxs:text-[9px] px-8 md:text-sm'>
+								<h2 className='text-xl font-bold mb-[3px] -mt-12 font-head'>Pinpal</h2>
+								<p className='font-text text-center xxxs:text-[9px] px-8 md:text-sm'>
 									A web application aimed at helping users keep their browser tabs
 									organized and easily accessible.
 								</p>
 								<a
 									href='https://pinpals.vercel.app/'
 									target='_blank'
-									className='bg-black flex items-center gap-2 px-3 py-2 rounded-md text-white font-text mt-4 hover:no-underline'>
+									className='bg-black flex items-center gap-2 px-3 py-2 rounded-md text-white font-text xxxs:text-[10px] hover:no-underline'>
 									View Site
 									<FiArrowUpRight />
 								</a>
@@ -100,7 +100,7 @@ export const Projects: FC = () => {
 					</div>
 					{/* End of first row */}
 					{/* Second row */}
-					<div className='row xxxs:-mt-12 md:m-0 lg:-mt-[124px]'>
+					<div className='row xxxs:-mt-12 md:-mt-[45px] lg:-mt-[80px] xl:-mt-[125px]'>
 						{/* Student anon */}
 						<div className='col col-span-7 relative group'>
 							<div
@@ -119,15 +119,17 @@ export const Projects: FC = () => {
 								/>
 							</div>
 							<div className='absolute top-0 left-0 right-0 bottom-0 opacity-0 group-hover:opacity-90 bg-opacity-75 bg-black text-white flex flex-col justify-center items-center transition-opacity duration-300'>
-								<h2 className='text-xl font-bold mb-2 font-head'>Student Anon</h2>
-								<p className='font-text xxxs:text-[9px] px-8 md:text-sm'>
+								<h2 className='text-xl font-bold mb-[3px] -mt-12 font-head'>
+									Student Anon
+								</h2>
+								<p className='font-text text-center xxxs:text-[9px] px-8 md:text-sm'>
 									An exclusive website wherein you can communicate with students
 									anonymously and vent about your problems.
 								</p>
 								<a
 									href='https://student-anon.vercel.app/'
 									target='_blank'
-									className='bg-black flex items-center gap-2 px-3 py-2 rounded-md text-white font-text mt-4 hover:no-underline'>
+									className='bg-black flex items-center gap-2 px-3 py-2 rounded-md text-white font-text xxxs:text-[10px] hover:no-underline'>
 									View Site
 									<FiArrowUpRight />
 								</a>
@@ -152,17 +154,17 @@ export const Projects: FC = () => {
 								/>
 							</div>
 							<div className='absolute top-0 left-0 right-0 bottom-0 opacity-0 group-hover:opacity-90 bg-opacity-75 bg-black text-white flex flex-col justify-center items-center transition-opacity duration-300'>
-								<h2 className='text-xl font-bold mb-2 font-head'>
+								<h2 className='text-xl font-bold mb-[3px] -mt-12 font-head'>
 									CCISLSG Suggestion Board
 								</h2>
-								<p className='font-text xxxs:text-[9px] px-8 md:text-sm'>
+								<p className='font-text text-center xxxs:text-[9px] px-8 md:text-sm'>
 									A website for students to provide necessary suggestions for the
 									betterment of the college.
 								</p>
 								<a
 									href='https://suggestion-board.ccislsg.com/'
 									target='_blank'
-									className='bg-black flex items-center gap-2 px-3 py-2 rounded-md text-white font-text mt-4 hover:no-underline'>
+									className='bg-black flex items-center gap-2 px-3 py-2 rounded-md text-white font-text xxxs:text-[10px] hover:no-underline'>
 									View Site
 									<FiArrowUpRight />
 								</a>
@@ -172,7 +174,7 @@ export const Projects: FC = () => {
 					</div>
 					{/* End of 2nd row */}
 					{/* Start of 3rd row */}
-					<div className='row xxxs:-mt-12 md:m-0 lg:-mt-[124px]'>
+					<div className='row xxxs:-mt-12 md:-mt-[45px] lg:-mt-[80px] xl:-mt-[125px]'>
 						{/* Student anon */}
 						<div className='col col-span-5 relative group'>
 							<div
@@ -191,15 +193,17 @@ export const Projects: FC = () => {
 								/>
 							</div>
 							<div className='absolute top-0 left-0 right-0 bottom-0 opacity-0 group-hover:opacity-90 bg-opacity-75 bg-black text-white flex flex-col justify-center items-center transition-opacity duration-300'>
-								<h2 className='text-xl font-bold mb-2 font-head'>NavigRater</h2>
-								<p className='font-text xxxs:text-[9px] px-8 md:text-sm'>
+								<h2 className='text-xl font-bold mb-[3px] -mt-12 font-head'>
+									NavigRater
+								</h2>
+								<p className='font-text text-center xxxs:text-[10px] px-8 md:text-sm'>
 									a commissioned project aimed to rate a specific location that's being
 									pinned by the user on the map.
 								</p>
 								<a
 									href='https://student-anon.vercel.app/'
 									target='_blank'
-									className='bg-black flex items-center gap-2 px-3 py-2 rounded-md text-white font-text mt-4 hover:no-underline'>
+									className='bg-black flex items-center gap-2 px-3 py-2 rounded-md text-white font-text xxxs:text-[10px] hover:no-underline'>
 									View Site
 									<FiArrowUpRight />
 								</a>
@@ -224,8 +228,8 @@ export const Projects: FC = () => {
 								/>
 							</div>
 							<div className='absolute top-0 left-0 right-0 bottom-0 opacity-0 group-hover:opacity-90 bg-opacity-75 bg-black text-white flex flex-col justify-center items-center transition-opacity duration-300'>
-								<h2 className='text-xl font-bold mb-2 font-head'>Studefy</h2>
-								<p className='font-text xxxs:text-[9px] px-8 md:text-sm'>
+								<h2 className='text-xl font-bold mb-[3px] -mt-12 font-head'>Studefy</h2>
+								<p className='font-text text-center xxxs:text-[9px] px-8 md:text-sm'>
 									A web-based application, developed as our final project in IT106. It
 									leverages XML and DOM Parser in conjunction with Java Remote Method
 									Invocation.
