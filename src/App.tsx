@@ -20,6 +20,7 @@ import { Contact } from "./pages/Contact";
 import { Quote } from "./pages/Quote";
 import Stack from "./pages/Stack";
 import Jobs from "./pages/Jobs";
+import { Analytics } from "@vercel/analytics/react";
 
 import { Navbar } from "./components/Navbar";
 import FaveSongs from "./pages/FaveSongs";
@@ -38,7 +39,6 @@ function App() {
 	return (
 		<>
 			<Links />
-
 			<Navbar />
 			<SmoothScroll>
 				<div id='home'>
@@ -63,6 +63,7 @@ function App() {
 					<Certificates />
 					<Contact />
 				</div>
+				<Analytics />
 			</SmoothScroll>
 		</>
 	);
