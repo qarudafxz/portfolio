@@ -14,14 +14,14 @@ import { HiArrowSmDown } from "react-icons/hi";
 import { useCounter } from "../../hooks/useCounter.ts";
 import { Tooltip } from "@chakra-ui/react";
 import image from "../assets/image.webp";
-
-// import { SkillsMarquee } from "../components/SkillsMarquee";
+import { HiCodeBracketSquare, HiMiniRocketLaunch } from "react-icons/hi2";
 
 export const Landing: FC = () => {
 	const numberOfProjects = useCounter(21, 70);
 	const monthsOfExperience = useCounter(7, 400);
 	const glitch = useGlitch();
 	const controls = useAnimation();
+	const [hovered, setHovered] = useState<boolean>(false);
 	const [direction, setDirection] = useState<number>(1);
 
 	useEffect(() => {
@@ -127,13 +127,41 @@ export const Landing: FC = () => {
 								<h1 className='font-title bg-gradient-to-tr from-black to-zinc-100 bg-clip-text tracking-tighter font-bold text-center xxxs:text-5xl md:text-6xl xl:text-[120px]'>
 									GEEK POWERED CREATIVITY IN
 									<span
+										onMouseEnter={() => setHovered(true)}
+										onMouseLeave={() => setHovered(false)}
 										ref={glitch.ref}
-										className='text-[#cb594c] font-span ml-4'>
+										className={`text-[#cb594c] font-span ml-4 hover:cursor-crosshair drop-shadow-[0_35px_35px_rgba(203,89,76, 0.95)]`}>
 										{" "}
 										ACTION
 									</span>
 								</h1>
 							</motion.div>
+							{hovered && (
+								<motion.div
+									initial={{ opacity: 0 }}
+									animate={{ opacity: 1, scale: 1 }}
+									transition={{ duration: 0.4 }}
+									exit={{ opacity: 0, scale: 0 }}
+									className='xxxs:hidden xl:block'>
+									<h1 className='absolute flex items-center gap-2 rounded-md font-span bg-[#cb594c] py-2 w-32 pl-3 text-white -rotate-12 duration-200 shadow-2xl left-[520px] top-[360px]'>
+										<HiCodeBracketSquare />
+										Developer
+									</h1>
+								</motion.div>
+							)}
+							{hovered && (
+								<motion.div
+									initial={{ opacity: 0 }}
+									animate={{ opacity: 1, scale: 1 }}
+									transition={{ duration: 0.4 }}
+									exit={{ opacity: 0, scale: 0 }}
+									className='xxxs:hidden xl:block'>
+									<h1 className='absolute flex items-center gap-2 right-[520px] top-[510px] rounded-md font-span bg-black py-2 w-[217px] pl-3 text-white rotate-3 duration-200 shadow-2xl'>
+										<HiMiniRocketLaunch />
+										Startup Enthusiast
+									</h1>
+								</motion.div>
+							)}
 						</div>
 					</div>
 					<div className='row gap-20 font-sub xxxs:mt-24 md:mt-28'>
