@@ -21,7 +21,7 @@ export const Projects: FC = () => {
 						delay={50}
 						className='col-md col-md-6 xxxs:px-4 py-10 md:p-20'>
 						<h1 className='text-white font-bold font-sub xxxs:text-2xl md:text-4xl'>
-							Take a look at the projects I made so far
+							Take a look at some of the projects I made so far
 						</h1>
 						<p className='font-text text-zinc-500 mt-4'>
 							{" "}
