@@ -130,37 +130,35 @@ export const Landing: FC = () => {
 										onMouseEnter={() => setHovered(true)}
 										onMouseLeave={() => setHovered(false)}
 										ref={glitch.ref}
-										className={`text-[#cb594c] font-span ml-4 hover:cursor-crosshair drop-shadow-[0_35px_35px_rgba(203,89,76, 0.95)]`}>
+										className={`text-[#cb594c] font-span ml-4 hover:cursor-crosshair ${
+											hovered && "pulse"
+										}`}>
 										{" "}
 										ACTION
 									</span>
 								</h1>
 							</motion.div>
 							{hovered && (
-								<motion.div
-									initial={{ opacity: 0 }}
-									animate={{ opacity: 1, scale: 1 }}
-									transition={{ duration: 0.4 }}
-									exit={{ opacity: 0, scale: 0 }}
-									className='xxxs:hidden xl:block'>
-									<h1 className='absolute flex items-center gap-2 rounded-md font-span bg-[#cb594c] py-2 w-32 pl-3 text-white -rotate-12 duration-200 shadow-2xl left-[520px] top-[360px]'>
+								<div className='xxxs:hidden xl:block'>
+									<h1
+										className={`absolute flex items-center gap-2 rounded-md font-span bg-[#cb594c] py-2 w-32 pl-3 text-white -rotate-12 duration-200 shadow-2xl left-[520px] top-[360px] ${
+											hovered ? "hovered" : "unhovered"
+										}`}>
 										<HiCodeBracketSquare />
 										Developer
 									</h1>
-								</motion.div>
+								</div>
 							)}
 							{hovered && (
-								<motion.div
-									initial={{ opacity: 0 }}
-									animate={{ opacity: 1, scale: 1 }}
-									transition={{ duration: 0.4 }}
-									exit={{ opacity: 0, scale: 0 }}
-									className='xxxs:hidden xl:block'>
-									<h1 className='absolute flex items-center gap-2 right-[520px] top-[510px] rounded-md font-span bg-black py-2 w-[217px] pl-3 text-white rotate-3 duration-200 shadow-2xl'>
+								<div className='xxxs:hidden xl:block'>
+									<h1
+										className={`absolute flex items-center gap-2 right-[520px] top-[510px] rounded-md font-span bg-black py-2 w-[217px] pl-3 text-white rotate-3 duration-200 shadow-2xl ${
+											hovered ? "hovered" : "unhovered"
+										}`}>
 										<HiMiniRocketLaunch />
 										Startup Enthusiast
 									</h1>
-								</motion.div>
+								</div>
 							)}
 						</div>
 					</div>

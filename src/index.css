@@ -182,3 +182,48 @@ h1.customHover::before {
 h1.customHover:hover::before {
 	width: 55%;
 }
+
+.pulse {
+	animation: pulseAnimation 3s infinite;
+}
+
+@keyframes pulseAnimation {
+	0% {
+		text-shadow: 0 0 10px #fb8b7f, 0 0 15px #cb594c, 0 0 20px #cb594c,
+			0 0 50px #cb594c;
+	}
+	50% {
+		text-shadow: 0 0 10px #fb8b7f, 0 0 15px #cb594c, 0 0 20px #cb594c,
+			0 0 50px #cb594c;
+	}
+	100% {
+		text-shadow: 0 0 10px #fb8b7f, 0 0 15px #cb594c, 0 0 20px #cb594c,
+			0 0 50px #cb594c;
+	}
+}
+
+.hovered {
+	animation: scale 0.3s ease-in-out;
+}
+
+@keyframes scale {
+	0% {
+		transform: scale(0.9);
+	}
+	50% {
+		transform: scale(1);
+	}
+}
+
+.unhovered {
+	animation: scaleOut 0.3s ease-in-out;
+}
+
+@keyframes scaleOut {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(0.9);
+	}
+}
