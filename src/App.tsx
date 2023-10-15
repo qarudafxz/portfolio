@@ -14,7 +14,7 @@ import { Preloader } from "./pages/Preloader";
 import { Testimony } from "./pages/Testimony";
 
 //smooth scrolling component
-import SmoothScroll from "./components/SmoothScroll";
+// import SmoothScroll from "./components/SmoothScroll";
 import { Certificates } from "./pages/Certificates";
 import { Contact } from "./pages/Contact";
 import { Quote } from "./pages/Quote";
