@@ -100,7 +100,7 @@ export const Projects: FC = () => {
 					</div>
 					{/* End of first row */}
 					{/* Second row */}
-					<div className='row xxxs:-mt-12 md:-mt-[45px] lg:-mt-[80px] xl:-mt-[125px]'>
+					<div className='row xxxs:-mt-12 md:-mt-[45px] lg:-mt-[80px] xl:-mt-[100px]'>
 						{/* Student anon */}
 						<div className='col col-span-7 relative group'>
 							<div
@@ -174,7 +174,7 @@ export const Projects: FC = () => {
 					</div>
 					{/* End of 2nd row */}
 					{/* Start of 3rd row */}
-					<div className='row xxxs:-mt-12 md:-mt-[45px] lg:-mt-[80px] xl:-mt-[125px]'>
+					<div className='row xxxs:-mt-12 md:-mt-[45px] lg:-mt-[80px] xl:-mt-[100px]'>
 						{/* Student anon */}
 						<div className='col col-span-5 relative group'>
 							<div

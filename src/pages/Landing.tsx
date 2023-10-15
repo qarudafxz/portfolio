@@ -139,7 +139,7 @@ export const Landing: FC = () => {
 								</h1>
 							</motion.div>
 							{hovered && (
-								<div className='xxxs:hidden xl:block 2xl:hidden'>
+								<div className='xxxs:hidden xl:block'>
 									<h1
 										className={`absolute flex items-center gap-2 rounded-md font-span bg-[#cb594c] py-2 w-32 pl-3 text-white -rotate-12 duration-200 shadow-2xl left-[520px] top-[360px] ${
 											hovered ? "hovered" : "unhovered"
@@ -150,7 +150,7 @@ export const Landing: FC = () => {
 								</div>
 							)}
 							{hovered && (
-								<div className='xxxs:hidden xl:block 2xl:hidden'>
+								<div className='xxxs:hidden xl:block 3xl:hidden'>
 									<h1
 										className={`absolute flex items-center gap-2 right-[520px] top-[510px] rounded-md font-span bg-black py-2 w-[217px] pl-3 text-white rotate-3 duration-200 shadow-2xl ${
 											hovered ? "hovered" : "unhovered"
