@@ -10,7 +10,7 @@ const Stack: FC = () => {
 					<ScrollAnimation
 						animateIn='flipYOut'
 						delay={15}>
-						<div className='flex flex-col gap-10'>
+						<div className='flex flex-col gap-10 xl:pl-24 2xl:pl-40'>
 							<h1 className='font-bold font-head text-semi xxxs:text-xl xs:text-4xl lg:text-5xl'>
 								Skill equipped with{" "}
 								<span className=' bg-clip-text text-transparent bg-gradient-to-tr from-zinc-900 to-zinc-500'>

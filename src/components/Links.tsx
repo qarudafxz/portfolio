@@ -58,7 +58,7 @@ export const Links: FC = () => {
 		},
 	];
 	return (
-		<div className='flex flex-col items-center gap-4 fixed bottom-16 z-20 xxxs:left-3 md:left-8'>
+		<div className='flex flex-col items-center gap-4 fixed bottom-16 z-20 left-[7px]'>
 			<motion.img
 				animate={{
 					transition: { duration: 2.01, repeat: Infinity, ease: "linear" },

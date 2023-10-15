@@ -41,7 +41,7 @@ export const Landing: FC = () => {
 
 	return (
 		<div
-			className='bg-main w-full xxxs:pb-16 md:pb-0'
+			className='bg-main w-full xxxs:pb-16 md:pb-0 2xl:px-40'
 			id='home'>
 			<div className='container'>
 				<div className='navbar navbar-expand-md p-4'>
@@ -139,7 +139,7 @@ export const Landing: FC = () => {
 								</h1>
 							</motion.div>
 							{hovered && (
-								<div className='xxxs:hidden xl:block'>
+								<div className='xxxs:hidden xl:block 2xl:hidden'>
 									<h1
 										className={`absolute flex items-center gap-2 rounded-md font-span bg-[#cb594c] py-2 w-32 pl-3 text-white -rotate-12 duration-200 shadow-2xl left-[520px] top-[360px] ${
 											hovered ? "hovered" : "unhovered"
@@ -150,7 +150,7 @@ export const Landing: FC = () => {
 								</div>
 							)}
 							{hovered && (
-								<div className='xxxs:hidden xl:block'>
+								<div className='xxxs:hidden xl:block 2xl:hidden'>
 									<h1
 										className={`absolute flex items-center gap-2 right-[520px] top-[510px] rounded-md font-span bg-black py-2 w-[217px] pl-3 text-white rotate-3 duration-200 shadow-2xl ${
 											hovered ? "hovered" : "unhovered"
@@ -162,7 +162,7 @@ export const Landing: FC = () => {
 							)}
 						</div>
 					</div>
-					<div className='row gap-20 font-sub xxxs:mt-24 md:mt-28'>
+					<div className='row gap-20 font-sub xxxs:mt-24 md:mt-28 2xl:mt-64'>
 						{/* small desc */}
 						<div className='xxxs:col col-lg-4 md:col md:col-lg-4'>
 							<motion.p

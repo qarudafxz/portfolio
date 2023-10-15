@@ -19,7 +19,7 @@ export const Projects: FC = () => {
 					<ScrollAnimation
 						animateIn='fadeIn'
 						delay={50}
-						className='col-md col-md-6 xxxs:px-4 py-10 md:p-20'>
+						className='col-md col-md-6 xxxs:px-4 py-10 md:p-20 2xl:pl-36'>
 						<h1 className='text-white font-bold font-sub xxxs:text-2xl md:text-4xl'>
 							Take a look at some of the projects I made so far
 						</h1>
@@ -30,7 +30,7 @@ export const Projects: FC = () => {
 					</ScrollAnimation>
 				</div>
 				{/* First row */}
-				<div className='xxxs:flex flex-col'>
+				<div className='xxxs:flex flex-col xl:px-16 2xl:px-36'>
 					<div className='row '>
 						{/* Start of cafefy */}
 						<div className='col-md col-md-5 relative group'>

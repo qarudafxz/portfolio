@@ -21,7 +21,7 @@ export const SongCard: FC<SongProps> = ({ cover, title, author, spotify }) => {
 				src={spotify}
 				width='100%'
 				height='152'
-				allow='autoplay *; encrypted-media *; fullscreen *; picture-in-picture *;'
+				allow='autoplay *; encrypted-media *; fullscreen *'
 				loading='lazy'
 			/>
 		</div>

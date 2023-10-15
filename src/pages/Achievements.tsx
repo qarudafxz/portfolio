@@ -46,7 +46,7 @@ export const Achievements: FC = () => {
 	}, [dots]);
 
 	return (
-		<div className='bg-main w-full xxxs:h-[2140px] md:h-[1490px] lg:h-[550px]'>
+		<div className='bg-main w-full xxxs:h-[2140px] md:h-[1490px] lg:h-[550px] xl:p-24 2xl:px-40'>
 			<div className='container'>
 				<h1 className='text-center font-sub text-5xl'>
 					What I've achieved so far

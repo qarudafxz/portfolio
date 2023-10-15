@@ -40,7 +40,9 @@ function App() {
 		<>
 			<Links />
 			<Navbar />
-			<SmoothScroll>
+			{/* <SmoothScroll> */}
+
+			<div className='parent'>
 				<div id='home'>
 					<Landing />
 				</div>
@@ -64,7 +66,8 @@ function App() {
 					<Contact />
 				</div>
 				<Analytics />
-			</SmoothScroll>
+			</div>
+			{/* </SmoothScroll> */}
 		</>
 	);
 }

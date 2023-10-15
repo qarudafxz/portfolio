@@ -1,5 +1,5 @@
 import { FC, useState } from "react";
-import me from "../assets/me.webp";
+import me from "../assets/me.png";
 import ScrollAnimation from "react-animate-on-scroll";
 import { motion } from "framer-motion";
 import { AiOutlineArrowRight } from "react-icons/ai";

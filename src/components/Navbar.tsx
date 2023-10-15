@@ -50,15 +50,11 @@ export const Navbar: FC = () => {
 								spy={true}
 								smooth={true}
 								offset={-70}
+								duration={500}
 								//eslint-disable-next-line
 								//@ts-ignore
-								className={({ isActive }: { isActive: string }) =>
-									`cursor-pointer px-3 py-2 ${
-										isActive
-											? " text-black bg-white rounded-full "
-											: "text-white hover:duration-200 "
-									} hover:bg-white text-black duration-200 no-underline `
-								}>
+								activeClass='active'
+								className='cursor-pointer px-3 py-2 hover:duration-200 hover:bg-zinc-950 rounded-full hover:no-underline hover:text-[#cb594c]'>
 								{item.label.toLowerCase()}
 							</Link>
 						);
