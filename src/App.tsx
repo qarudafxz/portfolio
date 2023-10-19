@@ -41,7 +41,6 @@ function App() {
 			<Links />
 			<Navbar />
 			{/* <SmoothScroll> */}
-
 			<div className='parent'>
 				<div id='home'>
 					<Landing />

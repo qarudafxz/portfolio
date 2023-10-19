@@ -162,7 +162,7 @@ export const Landing: FC = () => {
 							)}
 						</div>
 					</div>
-					<div className='row gap-20 font-sub xxxs:mt-24 md:mt-28 2xl:mt-64'>
+					<div className='row gap-20 font-sub xxxs:mt-24 md:mt-28 2xl:mt-36 3xl:mt-64'>
 						{/* small desc */}
 						<div className='xxxs:col col-lg-4 md:col md:col-lg-4'>
 							<motion.p

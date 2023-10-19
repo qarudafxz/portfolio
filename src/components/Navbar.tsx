@@ -23,7 +23,7 @@ export const Navbar: FC = () => {
 		}, 3000);
 	}, [direction, controls]);
 	return (
-		<div className='flex justify-center'>
+		<div className='flex justify-center relative z-50'>
 			<motion.div
 				initial={{ y: 1000 }}
 				animate={{ y: 0 }}
