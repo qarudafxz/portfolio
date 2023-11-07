@@ -13,8 +13,6 @@ import { Projects } from "./pages/Projects";
 import { Preloader } from "./pages/Preloader";
 import { Testimony } from "./pages/Testimony";
 
-//smooth scrolling component
-// import SmoothScroll from "./components/SmoothScroll";
 import { Certificates } from "./pages/Certificates";
 import { Contact } from "./pages/Contact";
 import { Quote } from "./pages/Quote";
@@ -29,7 +27,7 @@ function App() {
 	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
-		asyncFun().then(() => setLoading(false));
+		preload().then(() => setLoading(false));
 	}, []);
 
 	if (loading) {
@@ -40,7 +38,6 @@ function App() {
 		<>
 			<Links />
 			<Navbar />
-			{/* <SmoothScroll> */}
 			<div className='parent'>
 				<div id='home'>
 					<Landing />
@@ -66,12 +63,11 @@ function App() {
 				</div>
 				<Analytics />
 			</div>
-			{/* </SmoothScroll> */}
 		</>
 	);
 }
 
-function asyncFun() {
+function preload() {
 	return new Promise((resolve) => {
 		setTimeout(() => {
 			resolve(true);

@@ -8,6 +8,8 @@ import student from "../assets/projects/student.webp";
 import ccislsg from "../assets/projects/ccislsg.webp";
 import navig from "../assets/projects/navig.webp";
 import studefy from "../assets/projects/studefy.webp";
+import garufoods from "../assets/projects/garufoods.png";
+import istorya from "../assets/projects/istorya.png";
 
 export const Projects: FC = () => {
 	return (
@@ -209,7 +211,7 @@ export const Projects: FC = () => {
 								</a>
 							</div>
 						</div>
-						{/* End of student anon */}
+						{/* End of NavigRater */}
 						{/* CCISLSG */}
 						<div className='col-md col-md-7 relative group xxxs:-mt-12 md:m-0'>
 							<div
@@ -234,6 +236,78 @@ export const Projects: FC = () => {
 									leverages XML and DOM Parser in conjunction with Java Remote Method
 									Invocation.
 								</p>
+							</div>
+						</div>
+						{/* End of CCISLSG */}
+					</div>
+					{/* Start of fourth row */}
+					<div className='row xxxs:-mt-12 md:-mt-[45px] lg:-mt-[80px] xl:-mt-[100px]'>
+						{/* GaruFoods */}
+						<div className='col col-span-7 relative group'>
+							<div
+								className='bg-[#a0fff5] w-full rounded-md shadow-xl overflow-hidden'
+								style={{
+									height: "70%",
+								}}>
+								<img
+									src={garufoods}
+									alt='GaruFoods'
+									className='w-full h-75% transform scale-100 group-hover:scale-110 transition-transform'
+									style={{
+										objectFit: "cover",
+										objectPosition: "center",
+									}}
+								/>
+							</div>
+							<div className='absolute top-0 left-0 right-0 bottom-0 opacity-0 group-hover:opacity-90 bg-opacity-75 bg-black text-white flex flex-col justify-center items-center transition-opacity duration-300'>
+								<h2 className='text-xl font-bold mb-[3px] -mt-12 font-head'>
+									GaruFoods
+								</h2>
+								<p className='font-text text-center xxxs:text-[9px] px-8 md:text-sm'>
+									It is where you can browse and share different recipes of unique
+									cuisines from different countries
+								</p>
+								<a
+									href='https://garufoods.vercel.app/'
+									target='_blank'
+									className='bg-black flex items-center gap-2 px-3 py-2 rounded-md text-white font-text xxxs:text-[10px] hover:no-underline'>
+									View Site
+									<FiArrowUpRight />
+								</a>
+							</div>
+						</div>
+						{/* End of GaruFoods */}
+						{/* Istorya */}
+						<div className='col-md col-md-5 relative group xxxs:-mt-12 md:m-0'>
+							<div
+								className='bg-[#E400FF] w-full rounded-md shadow-xl overflow-hidden'
+								style={{
+									height: "70%",
+								}}>
+								<img
+									src={istorya}
+									alt='Istorya'
+									className='w-full h-full transform scale-100 group-hover:scale-110 transition-transform'
+									style={{
+										objectFit: "cover",
+										objectPosition: "center",
+									}}
+								/>
+							</div>
+							<div className='absolute top-0 left-0 right-0 bottom-0 opacity-0 group-hover:opacity-90 bg-opacity-75 bg-black text-white flex flex-col justify-center items-center transition-opacity duration-300'>
+								<h2 className='text-xl font-bold mb-[3px] -mt-12 font-head'>
+									istorya.
+								</h2>
+								<p className='font-text text-center xxxs:text-[9px] px-8 md:text-sm'>
+									Puhonan sa katawa ug walay undangay nga chika diri sa istorya.
+								</p>
+								<a
+									href='https://istorya.vercel.app/'
+									target='_blank'
+									className='bg-black flex items-center gap-2 px-3 py-2 rounded-md text-white font-text xxxs:text-[10px] hover:no-underline'>
+									View Site
+									<FiArrowUpRight />
+								</a>
 							</div>
 						</div>
 						{/* End of CCISLSG */}
